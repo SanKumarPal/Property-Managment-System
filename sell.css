@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Poppins&display=swap');
+
+._1Hyzp h2, ._3So_y {
+    font-size: 20px;
+    margin: 0 0 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.q_7hS ._24pdo ._36uzR {
+    color: #002f34;
+}
+.q_7hS ._1SuBk ._36uzR {
+    align-items: center;
+    cursor: pointer;
+    color: #9dadb6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #3c5077;
+
+}
+
+section{
+ padding: 2rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: var(--red);
+    background: var(--light-red);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background: var(--red);
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: #fff;
+    /* padding: 2rem 9%; */
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+}
+header .logo span{
+    color: var(--red);
+}
+
+header .navbar a{
+    color: #333;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+
+header .navbar a:hover{
+    color: var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2rem;
+    margin-right:.5rem ;
+    border-radius: .5rem;
+    color: var(--red);
+    background: var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.selling_page button{
+    border-style: solid;
+    border-width: 6px;
+    border-top-color:#23e5db ;
+    border-left-color: #ffce32;
+    border-right-color: #3a77ff;
+    border-bottom-color:#3a77ff ;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 15px;
+    border-radius: 30px;
+    background-color: white;
+    color: #ff720e;
+    display: flex;
+}
+
+.home{
+    min-height: 100vh;
+    /* background: url(../images/pk2.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home form{
+    /* margin-top: 7rem; */
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    width: 70rem;
+    padding: 2rem;
+}
+.home form h1{
+    text-align: center;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    font-size: 24px;
+}
+
+.home form .buttons-container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home form .buttons-container .btn{
+    flex: 1;
+}
+
+.home form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.home form .inputBox input,
+.home form .inputBox select{
+    flex: 1 1 25rem;
+    border: .1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.home form .btn{
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header  {
+        padding: 1.5rem 1rem;
+    }
+
+    section{
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left: 0; right: 0; top: 100%;
+        background: #f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        background: #fff;
+        border:.1rem solid #333;
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header  {
+        padding: 1.5rem 1rem;
+    }
+}

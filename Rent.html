@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="./logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Poppins&display=swap');
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: black;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 15px;
+    background: white;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+/* --------------------------------Properties---------------------- */
+ 
+
+
+.container #properties{
+    width: 100%;
+    margin-top: 20px;
+}
+.container #properties h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+}
+.container #properties .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container #properties .content .box{
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.container #properties .content .box:hover{
+    box-shadow: none;
+}
+.container #properties .content .box img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.container #properties h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+.container #properties span{
+    color: teal;
+    padding-right: 10px;
+}
+.container #properties p{
+    line-height: 1.4;
+    margin: 5px 0;
+}
+.container #properties a{
+    text-decoration: none;
+    color: white;
+    background: #555;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+
+.fa-map-marker:before {
+    color: red;
+    position:below;
+}
+
+</style>
+<body>
+<div class="container">
+<section>
+    <!-- ----------------------------Properties----------------------------->
+
+    <div id="properties">
+                <h2> Rent Properties</h2>
+
+                <div class="content">
+
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl.jpg" alt="">
+                        <div class="text">
+                            <h3>Single room for Rent in Katra Allahabad</h3>
+                            <span>Rs 2900/per month</span>
+                            
+                            <p>Room Owner is given you 1 Chair,1 Fan and 1 Bed.
+                                Water is available any time..
+                            </p>
+                            
+                            <div class="details">
+                                <span>300 sq ft</span>
+                                <span>1 bedroom</span>
+                                <span>1 bathroom </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/Gz5qPrmeYxzPHyrt9"><i class="fa fa-map-marker"></i>>Old Katra, Prayagraj, Uttar Pradesh </a>
+                        </div>
+                    </div> 
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl3.jpg" alt="">
+                        <div class="text">
+
+                            <h3>Khan Lodge room for Rent</h3>
+                            <span>Rs 2700/per month</span>
+                            <p>Room Malik is given you 2 Chair,1 Fan and 1 Bed.
+                                Water is available in morning 6 to 10 am & evening 7 to 9 pm.</p>
+                            <div class="details">
+                                <span>400 sq ft</span>
+                                <span>2 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/y9MSe38c5ZDrh7Be6"><i class="fa fa-map-marker"></i> Om Gayatri Nagar, Teliarganj, Prayagraj, Uttar Pradesh</a>
+                        </div>
+                    </div>
+                   
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl7.jpg" alt="">
+                        <div class="text">
+                            <h3>1 RK Independent House for Rent</h3>
+                            <span>Rs 4000/month</span>
+                            <p>A spacious house for your family, this unit includes 1 bedroom. It has a built-up area of 800 Square feet.</p>
+                            <div class="details">
+                                <span>800 sq ft</span>
+                                <span>1 balcony</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/gChMsq8DPAbN7PYi8"><i class="fa fa-map-marker"></i>Shiv Nagar, Allahpur, Allahabad</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pu2.jpeg" alt="">
+                        <div class="text">
+                            <h3>Residential Apartment for Rent</h3>
+                            <span>Rs 15,000 Per Month</span>
+                            <p>Its kothi 1st of all huge herbal garden and 100 square yard balcony inbuilt with hall are properly equipped with led our home is on main  from new yamuna bridge 500 meter from khan chaur...</p>
+                            <div class="details">
+                                <span>Built Up area: 300 sq.yards (250.84 sq.m.)
+                                Carpet area: 200 sq.yards (167.23 sq.m.)  </span>
+                                <span>2 bedrooms</span>
+                                <span>1 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/eJyogS1vgEq5mNSE8"><i class="fa fa-map-marker"></i>Yamunotri Nagar, Prayagraj,</a>
+                        </div>
+                    </div>
+                     <div class="box">
+                        <img class="lazy" data-src="./images/lu1.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Kamla Kunj Apartment for Rent</h3>
+                            <span>Rs 16,000 Per Month</span>
+                            <p>Located in a serene place, it has a carpet area of 1000 sq.Ft. It is an attractive property. The property has an amazing location and is semi-Furnished.</p>
+                            <div class="details">
+                                <span> 1000(92.9 sq.m.)  sq.ft</span>
+                                <span>3 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/PCFTNoorsbPGxGwa7"><i class="fa fa-map-marker"></i> Tagore Town, Prayagraj, Uttar Pradesh 211002</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/Lu.jpg" alt="">
+                        <div class="text">
+                            <h3>Independent House/Villa for Rent</h3>
+                            <span>Rs 5500 Per Month</span>
+                            <p>Saparate water tank Saparate balcony Saparate washroom Open kitchen includes bedroom and living room Almirah, bed, fan, light --Included--</p>
+                            <div class="details">                              
+                                <span>Plot area 150(13.94 sq.m.)  sq.ft.</span>
+                                <span>1 bedrooms</span>
+                                <span>1 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/PRWqUauKb2dC775KA"><i class="fa fa-map-marker"></i>Saket Nagar, Allahabad, U P</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pkk.jpeg" alt="">
+                        <div class="text">
+                            <h3>2 BHK Semi Furnished House For Rent</h3>
+                            <span>Rs 9000 Per Month</span>
+                            <p>Spacious big room recently renovated, new painting, marbal floor with balcony and porch area and pooja room also at reasonable price , near highway ,hospital ,market and schools area</p>
+                            <div class="details">
+                                <span>1450.00 sqft</span>
+                                <span>3 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/ZNY8Ebze6MxFD7jWA"><i class="fa fa-map-marker"></i> Govindpur, Teliarganj, Prayagraj</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo.jpg" alt="">
+                        <div class="text">
+                            <h3>Room for Girls</h3>
+                            <span>Rs 2500 Per Month</span>
+                            <p>The services which we provide and quality of food (3 times meal and two times tea) is awesome.. It's greenary and open area is also a unique factor of this pg..</p>
+                            <div class="details">
+                                <span>400 sq ft</span>
+                                <span>1 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                           <a href="https://goo.gl/maps/NQknHok4j5KWWJnu6"><i class="fa fa-map-marker"></i>Allahpur, Allahabad</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo1.jpg" alt="">
+                        <div class="text">
+                            <h3>Shared Room for Girls</h3>
+                            <span>Rs 2200 Per Month</span>
+                            <p>This room is only for girls,so boys please dont contact me.This portion is the only part of our home which is rented,so tenant will feel home type env. Here.</p>
+                            <div class="details">
+                                <span>350 sq ft</span>
+                                <span>1 bedrooms</span>
+                                <span>1 bathrooms </span>
+                                <span>1 BHK </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/NQknHok4j5KWWJnu6"><i class="fa fa-map-marker"></i>Daraganj,Allahabad</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+       
+            <a href="./Button.html" class="view">Back</a>
+
+            </div>
+    </section>
+</div>
+    <script>//Lazy Load Optimizer-------------------
+        document.addEventListener("DOMContentLoaded", ()=>{
+                               let lazyloaderImages = document.querySelectorAll('img.lazy');
+            let lazyloaderThrottleTimeout;
+            lazyloaderImages.forEach(img =>{
+                img.style.transform ='scale(0.5)';
+            })
+            function lazyload(){
+                if(lazyloaderThrottleTimeout){
+                    clearTimeout(lazyloaderThrottleTimeout);
+                }
+                lazyloaderThrottleTimeout = setTimeout(()=>{
+                    let scrollTop = window.pageYOffset;
+                    lazyloaderImages.forEach(img=>{
+                        if(img.offsetTop <(window.innerHeight + scrollTop)){
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            img.style.transform = 'scale(1)';
+                            img.style.transition = '2s'
+                        }
+                    })
+                    if(lazyloaderImages.length = 0){
+                        document.removeEventListener('scroll',lazyload);
+                        document.removeEventListener('resize',lazyload);
+                        document.removeEventListener('orientationChange', lazyload);
+                    }
+                }, 20)
+            }
+            document.addEventListener('scroll',lazyload);
+            document.addEventListener('resize',lazyload);
+            document.addEventListener('orientationChange', lazyload);
+        })</script> 
+</body>
+</html>

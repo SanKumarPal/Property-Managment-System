@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Poppins&display=swap');
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{<%--  --%>
+    min-height: 100vh;
+    background: #111;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 15px;
+    background: white;
+}
+header{
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 1px solid #555;
+    overflow: hidden;
+    position: relative;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+    float: left;
+    line-height: 40px;
+    text-shadow: 4px 5px 10px rgb(107 227 16);
+}
+
+header .logo span{
+    color: var(--red);
+}
+
+/* -- ----------------------------Country----------------------------- -- */
+.country_select{
+    width: 250px;
+}
+
+.select i{
+    font-size: 15px;
+}
+
+.select{
+    width: 100%;
+    padding: 10px 2px;
+    background-color: rgb(255, 255,255,0.7);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #c7dcff;
+}
+
+.option p{
+    margin-left: 10px;
+    color: #444444;
+}
+.option i{
+    color: #839a9c;
+}
+.option-box{
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    display: none;
+}
+
+.hidden{
+    display: block;
+}
+
+/* -- ----------------------------Country----------------------------- -- */
+
+
+header ul{
+    float:right;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    line-height: 70px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.7;
+    padding: 10px 20px;
+}
+header ul li a:hover{
+    font-weight: bold;
+    opacity: 1;
+}
+header ul li a.active{
+    width: 130px;
+    height: 40px;
+    border-color:rgb(227 194 26) ;
+    outline: none;
+    background: rgb(84 171 18);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 50px;
+}
+header ul li a.pk{
+    width: 130px;
+    height: 40px;
+    border-color:rgb(227 194 26) ;
+    outline: none;
+    background: rgb(84 171 18);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 50px;
+}
+header .menu{
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none;
+}
+/* ---------section-------- */
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+section .banner{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .thumb{
+    width:100% ;
+    height: 100%;
+    position: relative;
+}
+.banner .thumb img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    animation: fae 1s ease-in-out;
+}
+@keyframes fade{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+.banner .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner .text h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: -1px 3px 0 white;
+    font-size: 3em;
+    color: rgb(13, 187, 187);
+}
+.banner .text p{
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: rgb(239 217 21);
+}
+
+.banner .text input{
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #0009;
+    color: white;
+    padding: 0 5px;
+}
+.banner .text button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.prev, .next{
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+     padding: 0 10px;
+     opacity: 0.5;
+     cursor: pointer;
+     transition: 0.3s linear;
+}
+.next{
+    right: 0;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+.slide-nav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.slide-nav .nav-dot{
+    background: black;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+    border: 1px solid crimson;
+    cursor: pointer;
+}
+.slide-nav .nav-dot.dot-active{
+    background: crimson;
+
+}
+/* --------------------------------About---------------------- */
+#about{
+    width: 100%;
+    margin-top: 20px;
+}
+#about h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#about .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about .content .text{
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+#about .content .text p{
+    line-height: 1.4;
+    margin: 10px 0;
+}
+#about .content .text a{
+    display: inline-block;
+    text-decoration:none ;
+    color: white;
+    background: #555;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.3s ease-in-out;
+}
+#about .thumb{
+    flex: 1;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#about .thumb .thumb-box{
+    flex: 1;
+    min-width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.5s ease-in-out;
+}
+#about .thumb .thumb-box img{
+    width: 100%;
+    height: 240px;
+    display: block;
+    object-fit: cover;
+}
+#about .thumb .thumb-box h3{
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+#about .thumb .thumb-box:hover,
+#about .content .text a:hover{
+    box-shadow: none;
+}
+#about .partner h3{
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+#about .partner p{
+    margin: 10px;
+}
+#about .partner a{
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    color: crimson;
+    display: inline-block;
+}
+#about .partner a:hover{
+    font-weight: 900;
+    color: teal;
+}
+
+/* --------------------------------Properties---------------------- */
+ 
+
+
+#properties{
+    width: 100%;
+    margin-top: 20px;
+}
+#properties h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#properties .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#properties .content .box{
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#properties .content .box:hover{
+    box-shadow: none;
+}
+#properties .content .box img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+#properties h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+#properties span{
+    color: teal;
+    padding-right: 10px;
+}
+#properties p{
+    line-height: 1.4;
+    margin: 5px 0;
+}
+#properties a{
+    text-decoration: none;
+    color: white;
+    background: #555;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+.fa-map-marker:before {
+    color: red;
+    position:below;
+}
+/* ---------------------------------service--------------------- */
+#services{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+#services h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#services .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    cursor: pointer;
+}
+#services .content .card{
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;  
+}
+#services .content .card i{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    color: teal;
+    line-height: 100px;
+}
+#services .content .card img{
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+#services .content .card h3{
+    font-size: 1.3em;
+    letter-spacing: 4px;
+}
+#services .content .card p{
+    color: #888;
+    margin: 10px 0;
+}
+#services .content .card.circle img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid #888;
+    display: block;
+    object-fit: cover;
+}
+#services .content .card.circle h3{
+    color: teal;
+
+}
+/* ----------------------------------Contact-------------------- */
+#contact{
+    width: 100%;
+    margin-top: 20px;
+}
+#contact h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#contact .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact form{
+    flex: 1;
+    min-width: 300px;
+    padding: 30px 15px;
+}
+#contact form input,
+#contact form textarea,
+#contact form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #555;
+    margin: 15px 0;
+    resize: none;
+}
+#contact .map{
+    min-width: 300px;
+    flex: 1;
+    padding: 30px 15px;
+}
+#contact .map iframe{
+    width: 100%;
+}
+#contact form button{
+    background: rgb(0,96,151);
+    height: 40px;
+    color: white;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#contact .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact .box .text{
+    flex: 1;
+    margin: 15px;
+}
+#contact .box .text h3{
+    color: teal;
+    letter-spacing: 3px;
+}
+#contact .box .text p{
+    line-height: 1.4;
+    margin: 10px 0;
+}
+#contact .box .text span{
+    color: crimson;
+}
+/* -----------------------------------Footer---------------------- */
+footer{
+    width: 100%;
+    max-width: 1230px;
+    background: #811;
+    margin: auto;
+    color: white;
+}
+footer .content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .content .box{
+    flex: 1;
+    min-width: 300px;
+    margin: 30px 10px;
+}
+footer .content .box h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+footer .content .box p{
+    opacity: 0.5;
+    margin: 15px 0;
+}
+footer .content .box h3{
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+footer .row{
+    border-top: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+footer .row p{
+    flex: 1;
+    min-width: 470px;
+    margin-left: 15px;
+}
+footer .row p span{
+    color: rgb(20, 220, 103);
+}
+footer .row .social{
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+footer .row .social a{
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+footer .row .social a:hover{
+    font-weight: 900;
+    color: rgb(20, 220, 103);
+}
+/* ---------------------------Register / Login---------------------- */
+.login-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(130deg, rgb(155,1,155),rgb(1,118,185));
+    z-index: 99;
+    clip-path: circle(0 at 50% 50%);
+    transition: 0.5s ease-in-out;
+}
+#btn-close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2em;
+    color: rgb(255, 136, 0);
+    cursor: pointer;
+}
+.login-box{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 20px;
+    box-shadow: 0 0 20px #000;
+ } 
+.login-box h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+} 
+.login-box label{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: #eee;
+}
+.login-box input{
+    width: 210px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #eee;
+}
+.login-box i{
+    width: 40px;
+    text-align: center;
+}
+.login-box .check{
+    background: white;
+    height: 15px;
+    font-size: 12px;
+}
+.login-box [type="checkbox"]{
+    width: 25px;
+    height: 15px;
+    margin-right: 5px;
+    transform: translateY(3px);
+} 
+.login-box button{
+    width: 100%;
+    height: 40px;
+    background: crimson;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.login-box p{
+    text-align: center;
+    margin: 5px 0;
+    color: #555;
+}
+.login-box a{
+    text-decoration: none;
+    color: crimson;
+    display: inline-block;
+}
+.login-box .btn{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+.login-box .btn.btn-fb{
+    background: rgb(11, 91, 102);
+}
+.login-box .btn.btn-gg{
+    background: orangered;
+}
+.hidden{
+    display: none;
+ } 
+ .login-box .check span{
+    color: green;
+ }
+ .top-scroll{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+ }
+ .top-scroll a{
+    color: white;
+ }
+ /* -----------------------------Responsive---------------------- */
+ @media (max-width:1000px){
+    header ul{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 90;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: 0.5s ease-in-out;
+    }
+    header .menu{
+        display: block;
+        line-height: normal;
+    }
+    header ul.menu-toggle{
+        left: 0;
+    }
+    header ul li{
+        line-height: normal;
+        display: block;
+    }
+    header ul li a.active{
+        border-radius: 0;
+    }
+    footer .row{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+ }
+ @media (max-width:650px){
+  .banner.text input{
+    width: 300px;
+  }
+  .banner.text button{
+    margin-top: 10px;
+  }
+  .banner.text h2{
+    letter-spacing: 2px;
+    font-size: 2.5em;
+  }
+  section .banner{
+    height: 400px;
+  }
+ }
+
+ @media (max-width: 500px){
+    .container{
+        padding: 0 10px;
+    }
+    footer .row p,
+    footer .row .social{
+        min-width: 300px;
+        margin: 0;
+    }
+    footer .row .social a{
+        padding: 10px;
+    }
+    #properties .content .box{
+        margin: 15px 0;
+    }
+    #about .thumb .thumb-box{
+        margin: 10px 0;
+    }
+    #contact .box .text{
+        margin: 15px 0;
+    }
+    #contact form,
+    #contact .map{
+        padding: 30px 0;
+    }
+ }
+ @media (max-height: 500px){
+    .login-box{
+        transform: translate(-50%,-50%) scale(0.65);
+    }
+ }

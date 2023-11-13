@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My mini project</title>
+    <!-- ---------font awesome cdn link----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- -------coustome css file link---- -->
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+   
+
+    <!-- header section starts -->
+
+    <header>
+    <!-- <a href="#" class="logo"><span>Property Managment</span>System</a> -->
+<!-- 
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#services">services</a>
+        <a href="#featured">featured</a>
+        <a href="#agents">agents</a>
+        <a href="#contact">contact</a>
+    </nav> -->
+<!-- 
+    <div class ="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-user"></a>
+
+    </div> -->
+
+    <!-- <div class="selling_page">
+    <button><i class="fa-solid fa-plus"> <p>SELL</p></i></button>
+</div> -->
+
+    </header>
+    <!-- ---header section end---- -->
+
+<!-- home section start -->
+
+<section class="home" id="home">
+
+        <form action="sell.jsp" method="post" name="form" onsubmit="return validation()">
+
+        <h1>Welcome TO You</h1>
+
+        <!-- <div class="buttons-container">
+        
+           <a href="#" class="btn">for sell</a>
+        </div> -->
+
+        <div class = "inputBox" id="" >
+            <select name="ID_Type" id="">
+                <option value=""  disabled hidden selected id="">ID Type</option>
+                <option value="Addharcard">Addharcard</option>
+                <option value="Pancard">Pancard</option>
+                <option value="Driving Licence">Driving Licence</option>
+       
+               
+            </select>
+            <input type="text" name="ID_Number" placeholder="ID Number" id="ID_Number" style="color:red">
+            <select name="Land" id="Land">
+                <option value=""disabled hidden selected id="">Land Type</option>
+                <option value="Plot">Plot</option>
+                <option value="Built">Built</option>
+                <option value="Semi_Built">Semi_Built</option>
+            </select>
+            <select name="Building" id="Building">
+                <option value=""disabled hidden selected id="">Building Type</option>
+               <option value="Flat">Flat</option>
+                <option value="Banglaw">Banglaw</option>
+                <option value="House">House</option>
+            </select>
+            <select name="BHK" id="BHK">
+                <option value=""disabled hidden selected id="">BHK</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="4 BHK">4 BHK</option>
+                <option value="5 BHK">5 BHK</option>
+            </select>
+            <select name="Aminities" id="Aminities">
+                <option value=""disabled hidden selected id="">Aminities</option>
+                <option value="parkin space">Parkin Space</option>
+                <option value="swimming pool">Swimming Pool</option>
+                <option value="playground">Playground</option>
+                <option value="security">Security</option>
+                <option value="all">All</option>
+            </select>
+            <select name="Bedrooms" id="Bedrooms">
+                <option value=""disabled hidden selected id=" ">Bedrooms</option>
+                <option value="1 Bedrooms">1 Bedrooms</option>
+                <option value="2 Bedrooms">2 Bedrooms</option>
+                <option value="3 Bedrooms">3 Bedrooms</option>
+                <option value="4 Bedrooms">4 Bedrooms</option>
+                <option value="5 Bedrooms">5 Bedrooms</option>
+            </select>
+            <select name="Bathrooms" id="Bathrooms">
+                <option value=""disabled hidden selected id="">Bathrooms</option>
+                <option value="1 Bathrooms">1 Bathrooms</option>
+                <option value="2 Bathrooms">2 Bathrooms</option>
+                <option value="3 Bathrooms">3 Bathrooms</option>
+                <option value="4 Bathrooms">4 Bathrooms</option>
+                <option value="5 Bathrooms">5 Bathrooms</option>
+            </select>
+            <select name="Area_Type" id="Area_Type">
+                <option value=""disabled hidden selected id="">Area Type</option>
+                <option value="Resisdental">Resisdental</option>
+                <option value="Commerical">Commerical</option>
+                <option value="Industrial">Industrial</option>
+            </select>
+            <input type="text" name="Area" placeholder="Area(sq.ft)" id="Area">
+            <input type="text" name="Location" placeholder="Location" id="Location">
+            <!--  <select id="State" name="State" class="rui-3vs1L rui-3kHFv" data-aut-id="dd-state"><option value="unknown"></option><option value="2007598">Andaman &amp; Nicobar Islands</option><option value="2001145">Andhra Pradesh</option><option value="2001146">Arunachal Pradesh</option><option value="2001147">Assam</option><option value="2001148">Bihar</option><option value="2001149">Chandigarh</option><option value="2001178">Chhattisgarh</option><option value="2001150">Dadra &amp; Nagar Haveli</option><option value="2001151">Daman &amp; Diu</option><option value="2001152">Delhi</option><option value="2001153">Goa</option><option value="2001154">Gujarat</option><option value="2001155">Haryana</option><option value="2001156">Himachal Pradesh</option><option value="2001157">Jammu &amp; Kashmir</option><option value="2001158">Jharkhand</option><option value="2001159">Karnataka</option><option value="2001160">Kerala</option><option value="2001161">Lakshadweep</option><option value="2001162">Madhya Pradesh</option><option value="2001163">Maharashtra</option><option value="2001164">Manipur</option><option value="2001165">Meghalaya</option><option value="2001166">Mizoram</option><option value="2001167">Nagaland</option><option value="2001168">Odisha</option><option value="2001169">Pondicherry</option><option value="2001170">Punjab</option><option value="2001171">Rajasthan</option><option value="2001172">Sikkim</option><option value="2001173">Tamil Nadu</option><option value="2007599">Telangana</option><option value="2001174">Tripura</option><option value="2001176">Uttar Pradesh</option><option value="2001175">Uttaranchal</option><option value="2001177">West Bengal</option>
+            </select> 
+             <label>City</label>
+             <input type="text"> -->
+            <input type="text" name="Land_Mark" placeholder="Land Mark" id="Land_Mark">
+            <input type="text" name="Upper_Price" placeholder="Upper Price" id="Upper_Price">
+            <input type="text" name="Lower_Price" placeholder="Lower Price" id="Lower_Price">
+            <input type="text" name="Name" placeholder="Name" id="Name">
+            <input type="text" name="Address" placeholder="Address" id="Address">
+            <input type="text" name="Contact_No" placeholder="Contact No" id="Contact_No">
+            <input type="file" name="choose_Photo" placeholder="choose Photo"  id="file-input" accept="image/png,image/jpeg" onchange="preview()" multiple>
+            <!-- <select name="" id="">
+                <option value=""disabled hidden selected id="">minimum price</option>
+                <option value="2400">2400</option>
+                <option value="2500">2500</option>
+                <option value="2600">2600</option>
+                <option value="2700">2700</option>
+                <option value="2800">2800</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>maximum price</option>
+                <option value="3000">3000</option>
+                <option value="4000">4000</option>
+                <option value="5000">5000</option>
+                <option value="6000">6000</option>
+                <option value="7000">7000</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>property status</option>
+                <option value="Ready To Move">Ready To Move</option>
+                <option value="under Construnction">under Construnction</option>
+                <option value="furnished">furnished</option>
+                <option value="semi-furnished">semi-furnished</option>
+                <option value="unfurnished">unfurnished</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>property type</option>
+                <option value="flat">flat</option>
+                <option value="house">house</option>
+                <option value="shop">shop</option>
+                <option value="warehouse">warehouse</option>
+                <option value="land">land</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>BHK</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="4 BHK">4 BHK</option>
+                <option value="5 BHK">5 BHK</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>aminities</option>
+                <option value="parkin space">parkin space</option>
+                <option value="swimming pool">swimming pool</option>
+                <option value="playground">playground</option>
+                <option value="security">security</option>
+                <option value="all">all</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bedrooms</option>
+                <option value="1 bedroom">1 bedroom</option>
+                <option value="2 bedroom">2 bedroom</option>
+                <option value="3 bedroom">3 bedroom</option>
+                <option value="4 bedroom">4 bedroom</option>
+                <option value="5 bedroom">5 bedroom</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select>
+            <select name="" id="">
+                <option value=""disabled hidden selected>bathrooms</option>
+                <option value="1 bathroom">1 bathroom</option>
+                <option value="2 bathroom">2 bathroom</option>
+                <option value="3 bathroom">3 bathroom</option>
+                <option value="4 bathroom">4 bathroom</option>
+                <option value="5 bathroom">5 bathroom</option>
+            </select> -->
+        </div>
+
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    
+</section>
+<!-- home section ends -->
+
+
+<!-- services section starts -->
+
+<script type="text/javascript">
+
+function validation(){
+
+
+var ID_Type = document.getElementById('ID_Type').value;
+var ID_Number = document.getElementById('ID_Number').value;
+
+
+if(ID_Type == "") {  
+    document.getElementById("ID_Type").innerHTML = "**Fill the ID_Type please!";  
+    return false;  
+}  
+
+if(ID_Number == "") {  
+    document.getElementById("ID_Number").innerHTML = "**Fill the ID_Number please!";  
+    return false;  
+}  
+
+}
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>

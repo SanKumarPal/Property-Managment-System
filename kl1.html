@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="./logo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Poppins&display=swap');
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: black;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 15px;
+    background: white;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+/* --------------------------------Properties---------------------- */
+ 
+
+
+.container #properties{
+    width: 100%;
+    margin-top: 20px;
+}
+.container #properties h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+}
+.container #properties .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container #properties .content .box{
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.container #properties .content .box:hover{
+    box-shadow: none;
+}
+.container #properties .content .box img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.container #properties h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+.container #properties span{
+    color: teal;
+    padding-right: 10px;
+}
+.container #properties p{
+    line-height: 1.4;
+    margin: 5px 0;
+}
+.container #properties a{
+    text-decoration: none;
+    color: white;
+    background: #555;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+
+.fa-map-marker:before {
+    color: red;
+    position:below;
+}
+
+</style>
+<body>
+<div class="container">
+<section>
+    <!-- ----------------------------Properties----------------------------->
+
+    <div id="properties">
+                <h2>Sale Properties</h2>
+
+                <div class="content">
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl1.jpeg" alt="">
+                        <div class="text">
+                            <h3>Residential Land for Sale</h3>
+                            <span>Rs 18Lac@ 2,000 per sq.ft</span>
+                            <p>Facing: East,Gated Society:Yes
+                                Overlooking:Main Road
+                            </p>
+                            <div class="details">
+                                <span>1000 sq ft</span>
+                                <span>Floors Allowed Construction:4 Floors</span>
+                                <span>Possession:Immediate </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/bFvHMycmmiiCtnkD7"><i class="fa fa-map-marker"></i>Shantipuram, Phaphamau, Allahabad,U P</a>
+                        </div>
+                    </div>
+               
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl4.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Land for Sale</h3>
+                            <span>Rs 18Lac@ 2,000 per sq.ft</span>
+                            <p>This land has a selling price of Rs 18 Lac and spreads across an area of 1000 square feet with dimensions of 50 X 18. This residential plot can be utilized ...</p>
+                            <div class="details">
+                                <span>1000 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/RDpnkv8rxGjr1Tqd8"><i class="fa fa-map-marker"></i>Phaphamau, Uttar Pradesh 211013</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/pl5.jpg" alt="">
+                        <div class="text">
+                            <h3>House & Villa for Sale in Mundera, Allahabad</h3>
+                            <span>Rs 44Lac@ 2,240/Sq.ft. </span>
+                            <p>Built Up Area 2500  Sq.ft.,Carpet Area 1250 Sq.ft.,Total Floors 2 </p>
+                            <div class="details">
+                                <span>2500 sq ft</span>
+                                <span>4 BHK </span>
+                                <span>bedrooms</span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/6EHbK12m9CSYi7P6A"><i class="fa fa-map-marker"></i>Mundera, Allahabad</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo2.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Apartment for Sale</h3>
+                            <span>Rs 29.57Lac@ 3,300 per sq.ft.</span>
+                            <p>We are the proud owners of this 2 bhk apartment available in , bamrauli, allahabad. This semi-Furnished apartment it is a and the unit is located on 2nd floor and has a carpet area of 896 sq.Ft. . It has 2 bathroom(s) and 1 balcony(s).</p>
+                            <div class="details">                              
+                                <span>Carpet area: 896(83.24 sq.m.)  sq.ft.</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms </span>
+                                <span>1 balcony</span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/msyu4oNRTTHE5wQ37"><i class="fa fa-map-marker"></i>bamrauli, allahabad</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo3.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Land for Sale</h3>
+                            <span>18 Lac@ 72,000 per bigha</span>
+                            <p>We are proud owners of land available for sale in bamrauli, allahabad. Available at price of rs 18 lacs. It has plot area of 25 bigha. It is a freehold property</p>
+                            <div class="details">
+                                <span>Plot area 25(40533.61 sq.m.)  bigha</span>
+                               
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/msyu4oNRTTHE5wQ37"><i class="fa fa-map-marker"></i>Bamrauli, Allahabad, U P</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo4.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Land for Sale</h3>
+                            <span>Rs 45Lac@ 2,500 per sq.ft.</span>
+                            <p>We are proud owners of land available for sale in jhusi, allahabad. Available at price of rs 40 lacs. It has plot area of 200 sq yards. It is a freehold property</p>
+                            <div class="details">
+                                <span>Plot area 1800(167.23 sq.m.)  sq.ft.</span>
+                               
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/59jYFYBEdxuFQYj89"><i class="fa fa-map-marker"></i>jhusi, Allahabad</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo5.jpeg" alt="">
+                        <div class="text">
+                            <h3>Independent House/Villa for Sale</h3>
+                            <span>Rs 65 Lac@ 6,422 per sq.ft</span>
+                            <p>Under construction house, make your house your own interior and elevation design in haveliya jhunsi</p>
+                            <div class="details">
+                                <span>Built Up area: 1012(94.02 sq.m.)  sq.ft.</span>
+                                <span>3 bedrooms</span>
+                                <span>2 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                           <a href="https://goo.gl/maps/dPZsqGzXAYCT7Vn9A"><i class="fa fa-map-marker"></i>Beniganj, Allahabad</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="lazy" data-src="./images/oo6.jpeg" alt="">
+                        <div class="text">
+                            <h3>Independent/Builder Floor for Sale</h3>
+                            <span>Rs 20 Lac@ 3,636 per sq.ft</span>
+                            <p>1 bath, semi-Furnished, 1st floor (Of 4), 1 car parking, at kalindipuram location allahabad</p>
+                            <div class="details">
+                                <span>Built Up area: 550(51.1 sq.m.)  sq.ft.</span>
+                                <span>1 bedrooms</span>
+                                <span>1 bathrooms </span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/vDwFPu17enHyZ5Xw5"><i class="fa fa-map-marker"></i>Kalindipuram, Allahabad</a>
+                        </div>
+                    </div>
+					<div class="box">
+                        <img class="lazy" data-src="./images/oo7.jpg" alt="">
+                        <div class="text">
+                            <h3>Residential Land for Sale</h3>
+                            <span>16 Lac@ 1,600 per sq.ft.</span>
+                            <p>40ft main road or 25ft colony road ,Electric supply ,Water supply ,Water nali Sewage. Plot size- 900 sqft, 1800 sqft. Payment plan- Full payment plan. Corner plot available</p>
+                            <div class="details">
+                                <span>Plot area 1000(92.9 sq.m.)l x b : 45 ft.(14.03 mt.) x 25 ft.(7.79 mt.)  sq.ft</span>
+                            </div>
+                            <!-- <a href="#">Read more</a> -->
+                            <a href="https://goo.gl/maps/fpCWkCaQ3zFFjRL18"><i class="fa fa-map-marker"></i>Prayagraj Green City Colony Jhalwa, Allahabad</a>
+                        </div>
+                    </div>
+                </div>
+                
+       
+              <a href="./Button.html" class="view">Back</a>
+
+            </div>
+    </section>
+</div>
+    <script>//Lazy Load Optimizer-------------------
+        document.addEventListener("DOMContentLoaded", ()=>{
+                               let lazyloaderImages = document.querySelectorAll('img.lazy');
+            let lazyloaderThrottleTimeout;
+            lazyloaderImages.forEach(img =>{
+                img.style.transform ='scale(0.5)';
+            })
+            function lazyload(){
+                if(lazyloaderThrottleTimeout){
+                    clearTimeout(lazyloaderThrottleTimeout);
+                }
+                lazyloaderThrottleTimeout = setTimeout(()=>{
+                    let scrollTop = window.pageYOffset;
+                    lazyloaderImages.forEach(img=>{
+                        if(img.offsetTop <(window.innerHeight + scrollTop)){
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            img.style.transform = 'scale(1)';
+                            img.style.transition = '2s'
+                        }
+                    })
+                    if(lazyloaderImages.length = 0){
+                        document.removeEventListener('scroll',lazyload);
+                        document.removeEventListener('resize',lazyload);
+                        document.removeEventListener('orientationChange', lazyload);
+                    }
+                }, 20)
+            }
+            document.addEventListener('scroll',lazyload);
+            document.addEventListener('resize',lazyload);
+            document.addEventListener('orientationChange', lazyload);
+        })</script> 
+</body>
+</html>
